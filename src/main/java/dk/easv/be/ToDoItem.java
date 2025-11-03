@@ -39,6 +39,6 @@ public class ToDoItem
     @Override
     public String toString()
     {
-        return Title +"("+ Id +")";
+        return Id + ": "+Title;
     }
 }
