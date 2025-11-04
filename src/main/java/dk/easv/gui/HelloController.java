@@ -62,6 +62,7 @@ public class HelloController implements Initializable {
 
     public void onItemChanged(ActionEvent actionEvent)
     {
+        lstToDos.getItems().clear();
          try {
              String s = cbbUsers.getSelectionModel().getSelectedItem().toString().split(":")[0];
             List<ToDoItem> items = toDoLogic.getListOfTodosByUser(Integer.parseInt(s));
